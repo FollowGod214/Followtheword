@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow The Word</title>
+  
+  <!-- Google Fonts: Cal Sans and Tagesschrift -->
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Tagesschrift&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cal Sans', sans-serif; /* Cal Sans for the entire body */
+      background-color: #f8f5f0;
+      color: #333;
+    }
+    header {
+      background-color: #2d4739;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #8b6f47;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #2d4739;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .verse {
+      background-color: #dbe9ee;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+      font-family: 'Tagesschrift', sans-serif; /* Tagesschrift for the verse */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Follow The Word</h1>
+  <p>"As iron sharpens iron, so one person sharpens another." - Proverbs 27:17</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#messages">Messages</a>
+  <a href="#merch">Merch</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main id="home">
+  <h2>Welcome to Follow The Word</h2>
+  <p>Spreading the message of Jesus Christ with love and truth. Join us as we grow together in faith!</p>
+
+  <div class="verse" id="daily-verse">
+    Loading daily verse...
+  </div>
+</main>
+
+<main id="about">
+  <h2>About</h2>
+  <p>Follow The Word was founded with the mission to bring more hearts to Christ and strengthen believers through daily encouragement and teaching.</p>
+</main>
+
+<main id="messages">
+  <h2>Messages</h2>
+  <p>Coming soon: blog posts, devotionals, and encouragement for your journey with Jesus.</p>
+</main>
+
+<main id="merch">
+  <h2>Merch</h2>
+  <p>Exciting merch is on the way! Stay tuned for faith-inspired t-shirts, hats, and more.</p>
+</main>
+
+<main id="contact">
+  <h2>Contact</h2>
+  <p>Want to reach out? Email us at <a href="mailto:contact@followtheword.com">contact@followtheword.com</a>.</p>
+</main>
+
+<footer>
+  <p>&copy; 2025 Follow The Word. All rights reserved.</p>
+</footer>
+
+<script>
+  const verses = [
+    "For I know the plans I have for you, declares the LORD. - Jeremiah 29:11",
+    "The LORD is my shepherd; I shall not want. - Psalm 23:1",
+    "I can do all things through Christ who strengthens me. - Philippians 4:13",
+    "Trust in the LORD with all your heart. - Proverbs 3:5",
+    "Be strong and courageous. Do not be afraid. - Joshua 1:9"
+  ];
+
+  function showDailyVerse() {
+    const today = new Date();
+    const index = today.getDate() % verses.length;
+    document.getElementById('daily-verse').innerText = verses[index];
+  }
+
+  showDailyVerse();
+</script>
+
+</body>
+</html>
+
