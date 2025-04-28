@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow The Word</title>
+
+  <!-- Google Fonts: Cal Sans and Tagesschrift -->
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Tagesschrift&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Cal Sans', sans-serif;
+      background-color: #f8f5f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+      background-image: url('https://via.placeholder.com/1200x500'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #8b6f47;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    main {
+      padding: 2rem 1rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #2d4739;
+      margin-bottom: 1rem;
+    }
+
+    .verse {
+      background-color: #dbe9ee;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      font-family: 'Tagesschrift', sans-serif;
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    /* Card Layout for Sections */
+    .card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #2d4739;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .card {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Follow The Word</h1>
+  <p>"As iron sharpens iron, so one person sharpens another." - Proverbs 27:17</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#messages">Messages</a>
+  <a href="#merch">Merch</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main id="home">
+  <h2 class="section-title">Welcome to Follow The Word</h2>
+  <p>Spreading the message of Jesus Christ with love and truth. Join us as we grow together in faith!</p>
+
+  <div class="verse" id="daily-verse">
+    Loading daily verse...
+  </div>
+</main>
+
+<main id="about">
+  <h2 class="section-title">About</h2>
+  <div class="card">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuildingontheword.org%2Fwhat-to-do-with-a-cross%2F&psig=AOvVaw1b0F510wjNOKFsXtOKOtjW&ust=1745891964347000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDzrcfQ-YwDFQAAAAAdAAAAABAE" alt="Bible Image"> <!-- Replace with your own image -->
+    <h3>Our Mission</h3>
+    <p>Follow The Word was founded with the mission to bring more hearts to Christ and strengthen believers through daily encouragement and teaching.</p>
+  </div>
+</main>
+
+<main id="messages">
+  <h2 class="section-title">Messages</h2>
+  <div class="card">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuildingontheword.org%2Fwhat-to-do-with-a-cross%2F&psig=AOvVaw1b0F510wjNOKFsXtOKOtjW&ust=1745891964347000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDzrcfQ-YwDFQAAAAAdAAAAABAE" alt="Message Image"> <!-- Replace with your own image -->
+    <h3>Coming Soon</h3>
+    <p>Blog posts, devotionals, and encouragement for your journey with Jesus. Stay tuned!</p>
+  </div>
+</main>
+
+<main id="merch">
+  <h2 class="section-title">Merch</h2>
+  <div class="card">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuildingontheword.org%2Fwhat-to-do-with-a-cross%2F&psig=AOvVaw1b0F510wjNOKFsXtOKOtjW&ust=1745891964347000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDzrcfQ-YwDFQAAAAAdAAAAABAE" alt="Merchandise Image"> <!-- Replace with your own image -->
+    <h3>Exciting Merch Coming Soon!</h3>
+    <p>Faith-inspired t-shirts, hats, and more. Stay tuned for updates!</p>
+  </div>
+</main>
+
+<main id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Want to reach out? Email us at <a href="mailto:contact@followtheword.com">contact@followtheword.com</a>.</p>
+</main>
+
+<footer>
+  <p>&copy; 2025 Follow The Word. All rights reserved.</p>
+</footer>
+
+<script>
+  const verses = [
+    "For I know the plans I have for you, declares the LORD. - Jeremiah 29:11",
+    "The LORD is my shepherd; I shall not want. - Psalm 23:1",
+    "I can do all things through Christ who strengthens me. - Philippians 4:13",
+    "Trust in the LORD with all your heart. - Proverbs 3:5",
+    "Be strong and courageous. Do not be afraid. - Joshua 1:9"
+  ];
+
+  function showDailyVerse() {
+    const today = new Date();
+    const index = today.getDate() % verses.length;
+    document.getElementById('daily-verse').innerText = verses[index];
+  }
+
+  showDailyVerse();
+</script>
+
+</body>
+</html>
